@@ -28,7 +28,7 @@
 			function getCommand(){
 				console.log('getting command');
 				$.ajax({
-					url: 'api.php',
+					url: '../api.php',
 					dataType: 'json',
 					success: function(data) {
 						var command = data[0].command;

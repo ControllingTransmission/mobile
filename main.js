@@ -44,4 +44,5 @@ $(document).ready(function(){
 	setTimeout('window.location = window.location;', 30000);
 	window.scrollTo(0, 1);
 	rotateBackground();
+	setTimeout("$('#bandname').hide();", 500);
 });

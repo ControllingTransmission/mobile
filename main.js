@@ -1,5 +1,8 @@
 commandDelay = 1000;
 lastCommand = null;
+colorset = ['#000'];
+colorsetIndex = 0;
+rotationRate = 1000;
 
 function getCommand(){
 	console.log('getting command');
@@ -27,7 +30,16 @@ function setBackground(color){
 	$('body').css('background', color);
 }
 
+function rotateBackground(){
+	setBackground(colorset[colorsetIndex]);
+	colorsetIndex++;
+	if(colorsetIndex >= colorset.length)
+		colorsetIndex = 0;
+	setTimeout('rotateBackground()', rotationRate);
+}
+
 $(document).ready(function(){
 	getCommand();
 	// setTimeout('getCommand();', 1000);
+	setTimeout('window.location = window.location;', 30000);
 });

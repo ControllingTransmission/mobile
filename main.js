@@ -43,4 +43,5 @@ $(document).ready(function(){
 	// setTimeout('getCommand();', 1000);
 	setTimeout('window.location = window.location;', 30000);
 	window.scrollTo(0, 1);
+	rotateBackground();
 });

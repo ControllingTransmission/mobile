@@ -24,6 +24,23 @@
 					}
 				});
 			}
+
+			function getCommand(){
+				console.log('getting command');
+				$.ajax({
+					url: 'api.php',
+					dataType: 'json',
+					success: function(data) {
+						var command = data[0].command;
+						$('#command-text').val(command);
+					},
+					error: function(jXHR, textStatus, errorThrown) {
+						console.log(errorThrown);
+						console.log('error!');
+						console.log(jXHR);
+					}
+				});
+			}
 		</script>
 	</head>
 

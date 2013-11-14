@@ -9,7 +9,8 @@
 				src:url('fonts/Outage Cut.ttf');
 			}
 			body{
-				background:#fff;
+				background:#000;
+				color:#fff;
 				font-family: Outage;
 				height:120%;
 			}

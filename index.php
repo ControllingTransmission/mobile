@@ -20,6 +20,19 @@
 			}
 
 		</style>
+		<script type="text/javascript">
+			<?php 
+				include_once('db/config.php');
+
+				//Reload the bean
+				$action = R::findOne('action');
+
+				if(!empty($action)){
+					echo $action->command;
+				}
+			?>
+			
+		</script>
 	</head>
 	<body>
 		<div id="bandname">BITSHIFTER</div>

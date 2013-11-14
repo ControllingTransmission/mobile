@@ -6,7 +6,7 @@
 
 	if(empty($action)){
 		$action = R::dispense('action');
-		$action->command = "setBackground('#f00');";
+		$action->command = "setBackground('#f0c');";
 	}
 
 	echo json_encode(R::exportAll($action));

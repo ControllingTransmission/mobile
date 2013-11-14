@@ -9,14 +9,19 @@
 				src:url('fonts/Outage Cut.ttf');
 			}
 			body{
-				background:#000;
-				color:#fff;
+				background:#fc0;
+				color:#000;
 				font-family: Outage;
+				font-size:200%;
+				text-align: center;
 				height:120%;
 			}
 			img{
 				border:0px;
 				padding:0px;
+			}
+			#bandname {
+				margin-top:30%;
 			}
 
 		</style>
@@ -31,7 +36,7 @@
 					echo $action->command;
 				}
 			?>
-			
+
 		</script>
 	</head>
 	<body>

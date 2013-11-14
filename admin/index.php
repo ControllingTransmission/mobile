@@ -47,6 +47,7 @@
 	<body>
 		<textarea id="command-text" style="height:200px; width:40%"></textarea>
 		<br/>
+		<input type="submit" value="last command" onclick="getCommand();" />
 		<input type="submit" value="eval" onclick="console.log('eval'); eval($('#command-text').val());" />
 		<input type="submit" value="submit" onclick="submitCommand();" />
 		<br/>

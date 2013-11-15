@@ -35,6 +35,7 @@
 					dataType: 'json',
 					success: function(data) {
 						var command = data[0].command;
+						console.log(data);
 						$('#command-text').val(command);
 					},
 					error: function(jXHR, textStatus, errorThrown) {

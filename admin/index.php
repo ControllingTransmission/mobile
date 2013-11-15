@@ -15,6 +15,7 @@
 						command: $('#command-text').val(),
 					},
 					success: function(data) {
+						$('#command-text-last').val($('#command-text').val());
 						$('#command-text').val('');
 					},
 					error: function(jXHR, textStatus, errorThrown) {
@@ -45,7 +46,8 @@
 	</head>
 
 	<body>
-		<textarea id="command-text" style="height:200px; width:40%"></textarea>
+		<textarea id="command-text" style="height:200px; width:40%; float:left;"></textarea>
+		<textarea id="command-text-last" style="height:200px; width:40%; float:left;"></textarea>
 		<br/>
 		<input type="submit" value="last command" onclick="getCommand();" />
 		<input type="submit" value="eval" onclick="console.log('eval'); eval($('#command-text').val());" />
